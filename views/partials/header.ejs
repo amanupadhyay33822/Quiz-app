@@ -12,11 +12,7 @@
                 
                 Hi, <a href="<%=`/users/${currentUser._id}`%>"><%= currentUser.username.charAt(0).toUpperCase() +  currentUser.username.slice(1) %></a>
             </span>
-           <% if (currentUser.isAdmin) { %>
-            <span>
-                <a href="/admin">Admin</a>
-            </span>
-           <% } %>
+          
            
         <%} else {%>
             <a href="/users/login">Log In</a>
