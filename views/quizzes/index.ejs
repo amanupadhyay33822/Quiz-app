@@ -10,7 +10,7 @@
                     <a href="<%= `/quizzes/${quiz._id}/start` %>" id="start-quiz-link">
                         Start 
                     </a>
-                    <% if (currentUser) { %>
+                    <% if (currentUser.isAdmin) { %>
                         <a href="<%= `/admin/add-question/${quiz._id}` %>" id="add-question-link">
                             Add Question
                         </a>
