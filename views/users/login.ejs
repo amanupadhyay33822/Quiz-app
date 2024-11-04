@@ -1,0 +1,31 @@
+<section id="container" class="flex-centered">
+    <h2>Welcome to Quizzes</h2>
+    <form action="/users/login" method="POST" class="flex-centered"> 
+        <div class="form-controllers-wrapper">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" required>
+        </div>
+        <div class="form-controllers-wrapper">
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password" required>
+        </div>
+
+        <div class="form-controllers-wrapper">
+            <input type="submit" value="Login">
+        </div>
+        
+        <div class="horizontal-line">
+            <span>or</span>
+        </div>
+    </form>
+
+    <div>
+        <p id="link">Don't have an account? <a href="/users/signup">Sign Up</a></p>  
+    </div>
+</section>
+
+<%- contentFor('styles') %>
+<link rel="stylesheet" href="/stylesheets/users/formStyle.css">
+
+<%- contentFor('title') %>
+Log In

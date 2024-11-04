@@ -1,0 +1,121 @@
+/* Main Header Styling */
+#main-header {
+  background-color: #f8f9fa;
+  text-align: center;
+  padding: 20px;
+  margin-bottom: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#main-header h1 {
+  font-size: 2.5em;
+  color: #343a40;
+  margin-bottom: 10px;
+}
+
+#main-header p {
+  font-size: 1.2em;
+  color: #6c757d;
+}
+
+/* Container Styling */
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Form Styling */
+.add-ques h3 {
+  font-size: 1.8em;
+  color: #343a40;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.form-label {
+  font-weight: bold;
+  color: #495057;
+}
+
+.form-control,
+.form-select {
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  padding: 10px;
+}
+
+textarea.form-control {
+  resize: vertical;
+}
+
+.error-message {
+  color: #dc3545;
+  font-size: 0.9em;
+  margin-top: 5px;
+}
+
+/* Answer Section Styling */
+.answer h4 {
+  font-size: 1.4em;
+  color: #343a40;
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+
+.mcq,
+.true-false,
+.descriptive {
+  margin-top: 15px;
+}
+
+/* Option Button Styling */
+.btn.add-option {
+  background-color: #f8f9fa;
+  color: #343a40;
+  font-weight: bold;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  margin-top: 10px;
+}
+
+.btn.add-option:hover {
+  background-color: #e2e6ea;
+}
+
+/* Submit Button Styling */
+.btn.btn-dark {
+  background-color: #343a40;
+  color: #fff;
+  border-radius: 4px;
+  padding: 10px 20px;
+  font-size: 1em;
+  margin-top: 20px;
+}
+
+.btn.btn-dark:hover {
+  background-color: #495057;
+  color: #fff;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  #main-header h1 {
+    font-size: 2em;
+  }
+
+  #main-header p {
+    font-size: 1em;
+  }
+
+  .add-ques h3 {
+    font-size: 1.5em;
+  }
+
+  .btn.add-option,
+  .btn.btn-dark {
+    font-size: 0.9em;
+    padding: 8px 16px;
+  }
+}
